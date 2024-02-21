@@ -1,8 +1,10 @@
 # cli.py
 import os
+import sys
+import logging
 import argparse
+import openai
 from openai import OpenAI
-
 client = OpenAI()
 
 def main():
@@ -18,28 +20,24 @@ def main():
                         help='Quality of the generated image. Default is "standard"')
     parser.add_argument('-n', '--number', type=int, default=1,
                         help='Number of images to generate. Default is 1.')
-
     args = parser.parse_args()
 
     if not args.api_key:
         parser.error('The --api-key argument is required if OPENAI_API_KEY environment variable is not set.')
 
-    print(
-        generate_prompt(args.api_key, args.prompt, args.model, args.size, args.quality, args.number)
-    )
-
-# Generate image from prompt
-def generate_prompt(api_key, prompt, model="dall-e-3", size="1024x1024", quality="standard", n=1):
-    response = client.images.generate(
-      model=model,
-      prompt=prompt,
-      size=size,
-      quality=quality,
-      n=n,
-    )
-
-    # build an array of image urls
-    return [image.url for image in response.data]
+    # Reach out to the OpenAI API
+    try:
+        response = client.images.generate(
+            model=args.model,
+            prompt=args.prompt,
+            size=args.size,
+            quality=args.quality,
+            n=args.number,
+        )
+        print([image.url for image in response.data])
+    except openai.OpenAIError as e:
+        print(f"Recieved an error code while generating images: {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
