@@ -1,0 +1,8 @@
+tools: sys.read, sys.write
+
+Parse cli.py and determine what CLI options are available. Also parse tool.gpt and
+determine the difference between the args defined in tool.gpt and the args defined in
+cli.py.
+
+Update the tool.gpt file such that the args and their descriptions in cli.py are exactly represented
+in the tool.gpt file.

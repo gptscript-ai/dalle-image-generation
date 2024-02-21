@@ -1,0 +1,10 @@
+description: I am a tool that can generate images based on arguments that are sent to me.
+
+arg: api-key: Your OpenAI API key. This can also be set as an environment variable `OPENAI_API_KEY` before running the script. If both the environment variable and the command-line option are provided, the command-line option takes precedence.
+arg: prompt: The text prompt based on which the GPT model will generate a response
+arg: model: The model to use for image generation. Default is "dall-e-3".
+arg: size: The size of the image to generate, format WxH (e.g. 1024x1024). Default is 1024x1024.
+arg: quality: The quality of the generated image. Default is "standard".
+arg: number: The number of images to generate. Default is 1.
+
+#!/usr/bin/env python3 ./cli.py --api-key=${api-key} --prompt=${prompt} --model=${model} --size=${size} --quality=${quality} --number=${number}

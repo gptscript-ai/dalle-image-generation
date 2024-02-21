@@ -5,7 +5,7 @@ This CLI tool is a simple command-line interface for interacting with the OpenAI
 ## Features
 
 - Accepts an OpenAI API key through the command line or environment variable.
-- Accepts a text prompt for text generation and displays the resulting text.
+- Accepts a text prompt for image generation and displays the resulting images.
 - Supports image generation using a specified model, image size, quality, and the number of images to generate.
 
 ## Prerequisites
@@ -43,10 +43,10 @@ python cli.py --api-key YOUR_API_KEY --prompt "Your text prompt here" --model MO
 ### CLI Arguments
 
 - `-k` or `--api-key` (optional): Your OpenAI API key. This can also be set as an environment variable `OPENAI_API_KEY` before running the script. If both the environment variable and the command-line option are provided, the command-line option takes precedence.
-- `-p` or `--prompt` (required): The text prompt based on which the GPT model will generate a response.
+- `-p` or `--prompt` (required): The prompt for image generation.
 - `-m` or `--model` (optional): The model to use for image generation. Default is "dall-e-3".
 - `-s` or `--size` (optional): The size of the image to generate, format WxH (e.g. 1024x1024). Default is 1024x1024.
-- `-q` or `--quality` (optional): The quality of the generated image. Default is "standard".
+- `-q` or `--quality` (optional): The quality of the generated image. Allowed values are "standard" or "hd". Default is "standard".
 - `-n` or `--number` (optional): The number of images to generate. Default is 1.
 
 ### Setting the API Key as an Environment Variable
