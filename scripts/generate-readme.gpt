@@ -1,0 +1,7 @@
+tools: sys.read, sys.write
+
+Parse cli.py and determine if the README.md file needs to be updated. Only make changes
+to the README.md file if logic has changed or been added to cli.py since the last time
+that the README.md file was updated.
+
+Write the changes to README.md file if necessary.
