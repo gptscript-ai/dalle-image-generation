@@ -70,3 +70,24 @@ After setting the environment variable, you only need to provide the prompt argu
 ```bash
 python cli.py --prompt "Describe a futuristic city."
 ```
+
+## Examples
+
+### Cartoon lion standing proudly in the savannah
+```bash
+python cli.py --prompt "Cartoon lion standing proudly in the savannah" --quality "standard"
+```
+![Cartoon lion](./examples/cartoon-lion.png)
+
+### A realistic photograph of a squirrel writing some code in a peaceful meadow
+```bash
+python cli.py --prompt "A realistic photograph of a squirrel writing some code in a peaceful meadow" --quality "hd"
+```
+![Squirrel developer](./examples/squirrel-developer.png)
+
+
+### The eiffel tower rendered photorealistically at night with a swirling sky as the background
+```bash
+python cli.py --prompt "The eiffel tower rendered photorealistically at night with a swirling sky as the background" --quality "hd"
+```
+![Eiffel tower](./examples/eiffel-tower.png)
