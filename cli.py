@@ -11,7 +11,7 @@ def main():
                         help='OpenAI API key. Can also be set with OPENAI_API_KEY environment variable.')
     parser.add_argument('-p', '--prompt', type=str, required=True, help='Prompt for image generation.')
     parser.add_argument('-m', '--model', type=str, default='dall-e-3',
-                        help='Model to use for image generation. Default is "default-model" or specify a different model.')
+                        help='Model to use for image generation. Default is "dall-e-3".')
     parser.add_argument('-s', '--size', type=str, default='1024x1024',
                         help='Size of the image to generate, format WxH (e.g. 1024x1024). Default is 1024x1024.')
     parser.add_argument('-q', '--quality', type=str, default='standard',
