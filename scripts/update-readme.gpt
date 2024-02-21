@@ -1,6 +1,8 @@
 tools: sys.read, sys.write
 
 Parse cli.py and determine if the README.md file needs to be updated. Only make changes for the CLI
-options and make sure that their usage, description, and default values are up to date.
+options and make sure that their usage, description, and default values are up to date. Be sure to
+that the general structure of the README.md file is not changed and that the only changes made
+are to the CLI options.
 
 Write the changes to README.md file if necessary.

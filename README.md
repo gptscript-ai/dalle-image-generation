@@ -41,13 +41,15 @@ python cli.py --api-key YOUR_API_KEY --prompt "Your text prompt here" --model MO
 ```
 
 ### CLI Arguments
+| Argument | Short Command | Description | Example |
+|----------|---------------|-------------|---------|
+| API Key           | `-k` / `--api-key`   | Optional: Your OpenAI API key. Can also be set with OPENAI_API_KEY environment variable. Command-line option takes precedence.       | `--api-key YOUR_API_KEY`                  |
+| Prompt            | `-p` / `--prompt`    | Required: The text prompt for image generation.                                                                                    | `--prompt "Your text prompt here"`        |
+| Model             | `-m` / `--model`     | Optional: The model to use for image generation. Default is "dall-e-3".                                                            | `--model MODEL_NAME`                      |
+| Size              | `-s` / `--size`      | Optional: The size of the image to generate, in the format WxH (e.g., 1024x1024). Default is 1024x1024.                           | `--size IMAGE_SIZE`                       |
+| Quality           | `-q` / `--quality`   | Optional: The quality of the generated image. Allowed values are "standard" or "hd". Default is "standard".                        | `--quality IMAGE_QUALITY`                 |
+| Number | `-n` / `--number`    | Optional: The number of images to generate. Default is 1.                                                                          | `--number NUMBER`               |
 
-- `-k` or `--api-key` (optional): Your OpenAI API key. This can also be set as an environment variable `OPENAI_API_KEY` before running the script. If both the environment variable and the command-line option are provided, the command-line option takes precedence.
-- `-p` or `--prompt` (required): The prompt for image generation.
-- `-m` or `--model` (optional): The model to use for image generation. Default is "dall-e-3".
-- `-s` or `--size` (optional): The size of the image to generate, format WxH (e.g. 1024x1024). Default is 1024x1024.
-- `-q` or `--quality` (optional): The quality of the generated image. Allowed values are "standard" or "hd". Default is "standard".
-- `-n` or `--number` (optional): The number of images to generate. Default is 1.
 
 ### Setting the API Key as an Environment Variable
 
