@@ -16,8 +16,8 @@ def main():
                         help='Model to use for image generation. Default is "dall-e-3".')
     parser.add_argument('-s', '--size', type=str, default='1024x1024',
                         help='Size of the image to generate, format WxH (e.g. 1024x1024). Default is 1024x1024.')
-    parser.add_argument('-q', '--quality', type=str, default='standard',
-                        help='Quality of the generated image. Default is "standard"')
+    parser.add_argument('-q', '--quality', type=str, choices=['standard', 'hd'], default='standard',
+                        help='Quality of the generated image. Allowed values are "standard" or "hd". Default is "standard"')
     parser.add_argument('-n', '--number', type=int, default=1,
                         help='Number of images to generate. Default is 1.')
     args = parser.parse_args()
