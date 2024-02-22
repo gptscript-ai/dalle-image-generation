@@ -7,4 +7,4 @@ args: size: (optional) The size of the image to generate, format WxH (e.g. 1024x
 args: quality: (optional) The quality of the generated image. Allowed values are "standard" or "hd". Default is "standard".
 args: number: (optional) The number of images to generate. Defaults to 1.
 
-#!/usr/bin/env python3 ./cli.py --api-key=${api-key} --prompt=${prompt} --model=${model} --size=${size} --quality=${quality} --number=${number}
+#!/usr/bin/env python3 ./cli.py --api-key="${api-key}" --prompt="${prompt}" --model="${model}" --size="${size}" --quality="${quality}" --number="${number}"

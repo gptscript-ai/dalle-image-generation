@@ -75,20 +75,33 @@ python cli.py --prompt "Describe a futuristic city."
 
 ## Examples
 
-### Cartoon lion standing proudly in the savannah
+### Tool Usage
+This repository is made to integrate nicely with GPTScript. Accordingly, a [tool.gpt](./tool.gpt) file is provided that allows other GPTScripts to usage this tool. The following is an example of how to use this tool in a GPTScript
+where it assumes that the tool is located in the parent directory of the GPTScript file:
+
+```gpt
+tools: ./tool.gpt
+
+You are an expert in image generation. Please generate a cartoon lion standing proudly in the savannah.
+```
+
+You can find this specific example in the [examples](./examples/example.gpt) file.
+
+### Images
+#### Cartoon lion standing proudly in the savannah
 ```bash
 python cli.py --prompt "Cartoon lion standing proudly in the savannah" --quality "standard"
 ```
 ![Cartoon lion](./examples/cartoon-lion.png)
 
-### A realistic photograph of a squirrel writing some code in a peaceful meadow
+#### A realistic photograph of a squirrel writing some code in a peaceful meadow
 ```bash
 python cli.py --prompt "A realistic photograph of a squirrel writing some code in a peaceful meadow" --quality "hd"
 ```
 ![Squirrel developer](./examples/squirrel-developer.png)
 
 
-### The eiffel tower rendered photorealistically at night with a swirling sky as the background
+#### The eiffel tower rendered photorealistically at night with a swirling sky as the background
 ```bash
 python cli.py --prompt "The eiffel tower rendered photorealistically at night with a swirling sky as the background" --quality "hd"
 ```
