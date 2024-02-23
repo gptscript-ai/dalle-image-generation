@@ -1,0 +1,7 @@
+tools: ../tool.gpt, sys.write, sys.download
+
+Generate a charcoal drawing of the New York City skyline.
+
+Once done, download the file and write it a file called skyline with the appropriate
+extension.
+

@@ -92,7 +92,7 @@ You can find this specific example in the [examples](./examples/example.gpt) fil
 ```bash
 python cli.py --prompt "Cartoon lion standing proudly in the savannah" --quality "standard"
 ```
-![Cartoon lion](./examples/cartoon-lion.png)
+![Cartoon lion](./examples/lion.png)
 
 #### A realistic photograph of a squirrel writing some code in a peaceful meadow
 ```bash
