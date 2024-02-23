@@ -1,5 +1,4 @@
-description: I am a tool that can generate images based on arguments that are sent to me.
-
+description: I am a tool that can generate images based on arguments that are sent to me. I return a list of URLs to the generated images.
 args: api-key: (required) Your OpenAI API key. This can also be set as an environment variable `OPENAI_API_KEY` before running the script. If both the environment variable and the command-line option are provided, the command-line option takes precedence.
 args: prompt: (required) The text prompt based on which the GPT model will generate a response
 args: model: (optional) The model to use for image generation. Defaults to "dall-e-3".
