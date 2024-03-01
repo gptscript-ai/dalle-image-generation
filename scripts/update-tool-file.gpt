@@ -2,7 +2,7 @@ tools: sys.read, sys.write
 
 Parse cli.py and determine what CLI options are available. Also parse tool.gpt and
 determine the difference between the args defined in tool.gpt and the args defined in
-cli.py. Do not include the api-key in the args list.
+cli.py. Do not include the api-key or model in the args list.
 
 Update the tool.gpt file such that the args and their descriptions in cli.py are exactly represented
 in the tool.gpt file.
