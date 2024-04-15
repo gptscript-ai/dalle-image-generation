@@ -1,4 +1,5 @@
 name: image-generation
+credential: github.com/gptscript-ai/image-generation/credential
 description: Generates images based on the specified parameters and returns a list of URLs to the generated images.
 args: prompt: (required) The text prompt based on which the GPT model will generate a response
 args: size: (optional) The size of the image to generate, format WxH (e.g. 1024x1024). Defaults to 1024x1024.
