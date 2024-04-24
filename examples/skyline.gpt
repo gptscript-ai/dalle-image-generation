@@ -1,4 +1,4 @@
-tools: github.com/gptscript-ai/image-generation, sys.write, sys.download
+tools: github.com/gptscript-ai/dalle-image-generation, sys.write, sys.download
 
 Generate a charcoal drawing of the New York City skyline.
 
